@@ -1,0 +1,42 @@
+
+<nav class="navbar" style="background-color: #ffd900e7;">
+    <div class="container">
+      <a class="navbar-brand" style="font-size: 26px" >BANKA UYGULAMASI</a>
+
+
+      <div class="col-md-auto">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+          <a  routerLink="/auth" class="nav-link active buttonCls4"  style="background-color: #00bcfbe7" *ngIf="!isAuthenticated" >Yetkili Girişi</a>
+          </li>
+      </ul>
+      </div>
+
+      <ul class="nevbar-nav me-auto" class="navbar">
+        <div class="col-md-auto">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+            <a routerLink="/musteri-kayit" class="nav-link active buttonCls2" style="background-color: #00bcfbe7" *ngIf="isAuthenticated">Müşteri Kayıt İşlemleri</a>
+            </li>
+      </ul>
+        </div>
+
+        <div class="col-md-auto">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+            <button routerLink="/teminat-islemleri"  class="nav-link active buttonCls1" (click)="yonlendir()" style="background-color: #00bcfbe7;" *ngIf="isAuthenticated" >Teminat İşlemleri</button>
+            </li>
+        </ul>
+        </div>
+
+        <div class="col-md-auto">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+            <a  routerLink="/home" class="nav-link active buttonCls3"  style="background-color: #00bcfbe7;" >Home</a>
+            </li>
+        </ul>
+        </div>
+
+      </ul>
+    </div>
+</nav>

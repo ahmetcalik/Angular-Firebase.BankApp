@@ -1,0 +1,44 @@
+<div class="container-my-3">
+    <div class="row">
+        <div class="col-xs-2">
+
+          <form #musteriForm="ngForm" name="form" id="form" (ngSubmit)="tcControl(musteriForm)">
+            <a>
+              <table  border="3" class="table-bordered" table width="100%" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th scope="col" >MUSTERİ BİLGİLERİ GİRİŞİ</th>
+                    </tr>
+                </thead>
+                <tbody >
+                      <tr>
+                            <th scope="row">Müşteri Adı:</th>
+                            <label for="item-input" class="from-label"></label>
+                            <input type="text" class="form-control" id="musteri.Adi" required text ngModel name="Adi" [(ngModel)]="Musteri.Adi"/>
+                        </tr>
+                        <tr>
+                            <th scope="row">Müşteri Soyadı:</th>
+                            <label for="item-input" class="from-label"></label>
+                            <input type="text" class="form-control" id="Musteri.Soyadi" required text ngModel name="Soyadi" [(ngModel)]="Musteri.Soyadi"/>
+                        </tr>
+                        <tr>
+                            <th scope="row">Müşteri T.C:</th>
+                            <label for="item-input" class="from-label"></label>
+                            <input type="text"  class="form-control" id="Musteri.Tc" required maxlength="11" required minlength="11" ngModel name="Tc" [(ngModel)]="Musteri.Tc"/>
+                        </tr>
+                        <tr style="display: yes"  >
+                          <th scope="row" >Müşteri Numarası:</th>
+                          <b>
+                            <label  for="item-input" class="from-label">{{Musteri.No}}</label>
+                          </b>
+                        </tr>
+                </tbody>
+            </table>
+            </a>
+            <button type="submit" class="btn buttonCl1"  (click)="addItemMusteri(musteriForm.value)" >ONAYLA</button>
+            <button type="submit" class="btn buttonCls2"  (click)="temizle(musteriForm)" >TEMİZLE</button>
+
+          </form>
+        </div>
+    </div>
+</div>

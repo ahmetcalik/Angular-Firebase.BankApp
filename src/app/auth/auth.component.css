@@ -1,0 +1,80 @@
+
+    h1 {
+      position: fixed;
+      top: 110px;
+      left: 170px;
+      color: brown;
+      font-size: 32px;
+    }
+
+    form{
+      position: relative;
+      top: 120px;
+      left: 50px;
+   }
+
+ .buttonCls1 {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #ffc803;
+  border: black;
+  border-radius: 15px;
+  box-shadow: 0 5px #666;
+
+}
+.buttonCls1
+   {
+      position: fixed;
+      top: 370px;
+      right: 950px;
+   }
+
+.buttonCls1:hover {background-color: #00bcfbe7}
+
+.buttonCls1:active {
+  background-color: #00bcfbe7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.buttonCls2 {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #ffc803;
+  border: black;
+  border-radius: 15px;
+  box-shadow: 0 5px #666;
+
+}
+.buttonCls2
+   {
+      position: fixed;
+      top: 370px;
+      right: 840px;
+   }
+
+.buttonCls2:hover {background-color: #00bcfbe7}
+
+.buttonCls2:active {
+  background-color: #00bcfbe7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.uyarı
+   {
+      position: fixed;
+      top: 100px;
+      right: 400px;
+   }
